@@ -1,0 +1,308 @@
+/* GOOGLE FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-image:url("21street.pnj");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    height:100vh;
+}
+
+/* HERO */
+
+.hero{
+    width:100%;
+    height:100vh;
+
+    background:
+    linear-gradient(to right,
+    rgba(0,0,0,0.75),
+    rgba(0,0,0,0.35)),
+    url('street.jpg');
+
+    background-size:cover;
+    background-position:center;
+
+    position:relative;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 6%;
+}
+
+/* OVERLAY */
+
+.overlay{
+    position:absolute;
+    inset:0;
+
+    background:
+    linear-gradient(to top,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.1));
+
+    backdrop-filter:blur(1px);
+}
+
+/* NAVBAR */
+
+.navbar{
+    position:absolute;
+    top:0;
+    left:0;
+
+    width:100%;
+
+    padding:28px 6%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    z-index:100;
+}
+
+.logo{
+    color:white;
+    font-family:'Bebas Neue',sans-serif;
+    font-size:55px;
+    line-height:0.8;
+}
+
+.logo span{
+    display:block;
+    font-size:12px;
+    letter-spacing:4px;
+    font-family:'Montserrat',sans-serif;
+    margin-top:10px;
+}
+
+.nav-links{
+    display:flex;
+    gap:50px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-size:13px;
+    letter-spacing:2px;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    opacity:0.6;
+}
+
+.icons{
+    display:flex;
+    gap:20px;
+    color:white;
+    font-size:20px;
+}
+
+/* LEFT CONTENT */
+
+.left-content{
+    position:relative;
+    z-index:2;
+    color:white;
+    max-width:700px;
+}
+
+.top-text{
+    letter-spacing:8px;
+    font-size:15px;
+    color:#cfcfcf;
+    margin-bottom:25px;
+}
+
+.left-content h1{
+    font-family:'Bebas Neue',sans-serif;
+    font-size:170px;
+    line-height:0.9;
+    letter-spacing:4px;
+    color:#ececec;
+}
+
+.left-content p{
+    margin-top:20px;
+    font-size:20px;
+    letter-spacing:4px;
+    color:#c9c9c9;
+}
+
+.line{
+    width:320px;
+    height:1px;
+    background:#888;
+    margin:40px 0;
+}
+
+/* FEATURES */
+
+.features{
+    display:flex;
+    gap:50px;
+    margin-bottom:45px;
+}
+
+.feature h3{
+    font-size:13px;
+    letter-spacing:2px;
+    margin-bottom:5px;
+}
+
+.feature span{
+    color:#999;
+    font-size:12px;
+    letter-spacing:2px;
+}
+
+/* BUTTON */
+
+.btn{
+    display:inline-block;
+
+    padding:18px 40px;
+
+    border:1px solid #aaa;
+
+    color:white;
+    text-decoration:none;
+
+    letter-spacing:3px;
+    font-size:13px;
+
+    transition:0.4s;
+}
+
+.btn:hover{
+    background:white;
+    color:black;
+}
+
+/* RIGHT CONTENT */
+
+.right-content{
+    position:relative;
+    z-index:2;
+
+    height:100%;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:flex-end;
+
+    padding:140px 0 50px;
+}
+
+/* DROP BOX */
+
+.drop-box{
+    text-align:right;
+    color:rgb(255, 255, 255);
+}
+
+.drop-box p{
+    letter-spacing:5px;
+    font-size:13px;
+    color:#bdbdbd48;
+}
+
+.drop-box h2{
+    margin-top:10px;
+    font-size:28px;
+    font-weight:400;
+    letter-spacing:4px;
+}
+
+.barcode{
+    width:140px;
+    height:40px;
+
+    margin-top:20px;
+
+    background:
+    repeating-linear-gradient(
+    to right,
+    #fff 0px,
+    #fff 2px,
+    transparent 2px,
+    transparent 5px
+    );
+}
+
+/* YEAR */
+
+.year{
+    color:#bbb;
+    text-align:right;
+    font-size:15px;
+    letter-spacing:4px;
+    line-height:1.8;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1000px){
+
+    .left-content h1{
+        font-size:110px;
+    }
+
+    .features{
+        flex-wrap:wrap;
+        gap:25px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .nav-links{
+        display:none;
+    }
+
+    .hero{
+        padding:0 7%;
+    }
+
+    .left-content h1{
+        font-size:80px;
+    }
+
+    .left-content p{
+        font-size:14px;
+    }
+
+    .features{
+        gap:20px;
+    }
+
+    .right-content{
+        display:none;
+    }
+.shop-btn{
+    display: inline-block;
+    margin-top: 25px;
+    padding: 22px 60px;
+    background: white;
+    color: black;
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: bold;
+    border-radius: 12px;
+
+}
